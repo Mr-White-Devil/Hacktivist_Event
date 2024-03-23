@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Looking for something? . you want the Password Huh ?-->
+<!-- The Password is at the Bottom of the HTML . ENJOY :~) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASSIFIED INFORMATION</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<script>
+    function lines() {
+        let sizeW = Math.random() * 12;
+        let duration = Math.random() * 3;
+        let e = document.createElement('div');
+        e.setAttribute('class', 'circle');
+        document.getElementById('overlay').appendChild(e); //appendChild(overlay)
+        e.style.width = 2 + sizeW + 'px';
+        e.style.left = Math.random() * + innerWidth + 'px';
+        e.style.animationDuration = 2 + duration + 's';
+
+        setTimeout(function () {
+            document.getElementById('overlay').removeChild(e);
+        }, 5000);
+    }
+    setInterval(function () {
+        lines();
+    }, 50);
+</script>
+<div id="particles-js-container">
+    <div id="particles-js"></div>
+</div>
+
+
+<div id="popup" class="popup">
+    <h2>CLASSIFIED INFORMATION</h2>
+    <p>Guessed the Password? Enter the Password to Access the website:</p>
+    <div class="password-container">
+        <label for="passwordInput"></label><input type="password" id="passwordInput" placeholder="Password :">
+    </div>
+    <div class="button-container">
+        <button id="confirmBtn">Yes</button>
+        <button id="cancelBtn">No</button>
+    </div>
+</div>
+
+
+<div id="overlay" class="overlay">
+</div>
+
+
+<div id="websiteContent" class="content">
+    <h1>Department Of Cyber Security</h1>
+    <h2>CYBER SENTINELS NEXUS AND HACKTIVIST CLUB </h2>
+    <h4>Presents</h4>
+</div>
+
+<div id="video-container">
+    <video id="video-content" controls autoplay width="1100">
+        <source src="videocontent.mp4" type="video/mp4">
+    </video>
+</div>
+
+
+<img src = "cyber_sentinels_logo.png" class ="csnlogo" alt="">
+
+<img src = "HACKTIVIST_CLUB.png" class ="Hlogo" alt="">
+
+<div id = "developer" class = "developer">
+<h6> Developed By : MOHAMMED SHARAFATH , HACKTIVIST </h6>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+    particlesJS("particles-js", {
+        "particles": {
+            "number": {
+                "value": 80,
+                "density": {
+                    "enable": true,
+                    "value_area": 800
+                }
+            },
+            "color": {
+                "value": "#ffffff"
+            },
+            "shape": {
+                "type": "circle",
+                "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                },
+                "polygon": {
+                    "nb_sides": 5
+                },
+                "image": {
+                    "src": "img/github.svg",
+                    "width": 100,
+                    "height": 100
+                }
+            },
+            "opacity": {
+                "value": 0.5,
+                "random": false,
+                "anim": {
+                    "enable": false,
+                    "speed": 1,
+                    "opacity_min": 0.1,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 3,
+                "random": true,
+                "anim": {
+                    "enable": false,
+                    "speed": 40,
+                    "size_min": 0.1,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": true,
+                "distance": 150,
+                "color": "#ffffff",
+                "opacity": 0.4,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 6,
+                "direction": "none",
+                "random": false,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                }
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "repulse"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "push"
+                },
+                "resize": true
+            },
+            "modes": {
+                "grab": {
+                    "distance": 400,
+                    "line_linked": {
+                        "opacity": 1
+                    }
+                },
+                "bubble": {
+                    "distance": 400,
+                    "size": 40,
+                    "duration": 2,
+                    "opacity": 8,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 200,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+                "remove": {
+                    "particles_nb": 2
+                }
+            }
+        },
+        "retina_detect": true
+    });
+</script>
+
+<!-- HERE YOU ARE ! . HAVE  THE PASSWORD  -->
+<!-- THE PASSWORD IS "HACKTIVIST" -->
+<!-- REMEMBER US WE ARE COMING FOR YOU ! -->
+
+</body>
+</html>
